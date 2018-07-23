@@ -1,0 +1,220 @@
+
+
+body, html{
+  font-size: 100%;
+  font-family: "Helvetica", sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.mySlides {
+  display:none;
+}
+
+                
+
+                        /* border for nav */
+nav{
+	padding-top: 3px;
+border-top: 0.9px solid #9e9301;
+border-bottom:0.9px solid #9e9301;
+}
+ 
+                       /* Sticky Position Code Goes Here */
+nav{
+  position: sticky;
+  top: 0;
+}
+ 
+                             /* End Sticky  */
+nav ul{
+    list-style: none;
+    padding:0;
+    background:black;
+}
+
+nav ul li a{
+    color:#ddd;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 3;
+	  font-size:13px; 
+
+
+}
+nav ul li{
+    border-bottom: 1px dotted #ddd;
+}
+
+                             /*styling logo*/
+
+nav div:first-child{
+    background:black;
+     background-image:url(bg.jpg);
+        background-repeat: repeat;
+}
+
+nav div:first-child img{
+    filter: contrast(0);
+}
+
+nav div:first-child nav ul{
+    margin:0;
+}
+
+                          /*Styling for larger devices*/
+						  
+
+@media only screen and (min-width: 30em){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-image:url(bg.jpg);
+        background-repeat: repeat;
+        align-items: center;
+         max-height: 70px;
+       }
+    
+    nav ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+    }
+	
+    nav div:first-child a{
+        
+        margin:0 1rem;
+		    color:white;
+        text-decoration: none;
+        padding: .8rem 1rem;
+        display: block;
+         background-image:url(bg.jpg);
+        background-repeat: repeat;
+        line-height: 1;
+	      font-size:19px;
+    }
+    .nav a:hover{
+          color:white;
+    }
+    .shade a:hover{
+      background-color: white;
+    }
+ 
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+
+    }
+	
+    nav ul li a{
+        padding:1.2rem 1rem;
+        position: relative;
+        right:58px;
+        font-size:12px;
+          }
+    nav ul li a:hover{
+        color: #8e4c01;
+}
+
+  p{
+    margin-left:80px;
+    margin-right:80px;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 1.5em;
+
+  }
+ 
+  
+      /* top position code here */
+.top{
+background-color: #161616;
+color:#c1bbbb;
+padding:2px;
+font-size:10px;
+
+}
+.header {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  background:#161616;
+  color:#8c8c88;
+  margin:2px;
+  padding:5px;
+}
+
+.header > * {
+  display: table-cell;
+}
+
+.header > *:last-child {
+  text-align: right;  
+}
+
+.nav {
+  vertical-align: baseline;
+}
+
+.topinfo{
+
+  font-size:12.5px;
+  text-indent: 50px;
+  color:#8c8c88;
+
+}
+
+.topend{
+  text-decoration: none;
+  text-overflow: normal;
+  color:#8c8c88;
+  position: relative;
+  right:70px;
+  font-size: 12px;
+}
+
+.shade{
+  text-decoration: none;
+  text-overflow: normal;
+  color:white;
+  position: relative;
+  right:70px;
+  font-size: 12px;
+
+}
+
+.shade{
+  display:inline-block!important;
+  width:20px;
+  height:19px;
+  background-color:#666666;
+  text-align: center;
+  padding: 1px;
+  vertical-align: middle;
+  border-radius:50%;
+}
+
+.backy{
+
+  background-image: url(background.png);
+  padding: 1px;
+  margin:0px;
+}
+
+#parahead{
+
+  font-size: 40px;
+  font-style: bold; 
+   text-align: center;
+  color:#424240;
+}
+
+h2{
+  text-align: center;
+  color:#424240;
+}
+
+}
