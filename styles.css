@@ -1,4 +1,3 @@
-
 body, html{
   font-size: 100%;
   font-family: "Helvetica", sans-serif;
@@ -6,116 +5,10 @@ body, html{
   padding:0;
 }
 
-.mySlides {
-  display:none;
-}             
 
-                        /* border for nav */
-nav{
-  padding-top: 3px;
-border-top: 0.9px solid #9e9301;
-border-bottom:0.9px solid #9e9301;
-}
- 
-                       /* Sticky Position Code Goes Here */
-nav{
-  position: sticky;
-  top: 0;
-}
- 
-                             /* End Sticky  */
-nav ul{
-    list-style: none;
-    padding:0;
-    background:black;
-}
-
-nav ul li a{
-    color:#ddd;
-    text-decoration: none;
-    padding: .8rem 1rem;
-    display: block;
-    line-height: 3;
-    font-size:13px; 
+@media only screen and (min-width: 30em){            
 
 
-}
-nav ul li{
-    border-bottom: 1px dotted #ddd;
-}
-
-                             /*styling logo*/
-
-nav div:first-child{
-    background:black;
-     background-image:url(bg.jpg);
-        background-repeat: repeat;
-}
-                          /*Styling for larger devices*/
-              
-@media only screen and (min-width: 30em){
-    nav{
-        display: flex;
-        justify-content: space-between;
-        background-image:url(bg.jpg);
-        background-repeat: repeat;
-        align-items: center;
-         max-height: 70px;
-       }
-    
-    nav ul{
-        display: flex;
-        align-items: center;
-        background:none;
-        flex-wrap: wrap;
-    }
-  
-    nav div:first-child a{
-        
-        margin:0 1rem;
-        color:white;
-        text-decoration: none;
-        padding: .8rem 1rem;
-        display: block;
-         background-image:url(bg.jpg);
-        background-repeat: repeat;
-        line-height: 1;
-        font-size:19px;
-    }
-    .nav a:hover{
-          color:white;
-    }
-    .shade a:hover{
-      background-color: white;
-    }
- 
-    nav ul li{
-        border-bottom:none;
-        flex: 1 0 auto;
-        position: relative;
-
-    }
-  
-    nav ul li a{
-        padding:1.2rem 1rem;
-        position: relative;
-        right:58px;
-        font-size:12px;
-          }
-    nav ul li a:hover{
-        color: #8e4c01;
-}
-
-  p{
-    margin-left:80px;
-    margin-right:80px;
-    font-size: 15px;
-    font-weight: 300px;
-    line-height: 1.5em;
-
-  }
- 
-  
       /* top position code here */
 
 .header {
@@ -157,10 +50,11 @@ nav div:first-child{
   font-size: 12px;
 }
 
-.shade a:hover{
+.shade:hover{
   background: white;
+  cursor:pointer;
 }
-
+      /* circle shape*/
 .shade{
   display:inline-block!important;
   width:20px;
@@ -172,7 +66,116 @@ nav div:first-child{
   vertical-align: middle;
   border-radius:50%;
 }
+            /* top code ends here */
 
+
+            /* border for nav */
+nav{
+  padding-top: 3px;
+  border-top: 0.9px solid #9e9301;
+  border-bottom:0.9px solid #9e9301;
+}
+      
+                            
+                       /* Sticky Position header Code */
+nav{
+  position: sticky;
+  top: 0;
+}
+                             /* End Sticky  */
+
+nav ul{
+    list-style: none;
+    padding:0;
+    background:black;
+}
+
+nav ul li a{
+    color:#ddd;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 3;
+    font-size:13px; 
+
+}
+
+
+nav div:first-child{
+        background:black;
+        background-image:url(bg.jpg);
+        background-repeat: repeat;
+}
+              
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-image:url(bg.jpg);
+        background-repeat: repeat;
+        align-items: center;
+        max-height: 70px;
+       }
+    
+    nav ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+    }
+  
+    nav div:first-child a{
+        
+        margin:0 1rem;
+        color:white;
+        text-decoration: none;
+        padding: .8rem 1rem;
+        display: block;
+        background-image:url(bg.jpg);
+        background-repeat: repeat;
+        line-height: 1;
+        font-size:19px;
+    }
+    .nav a:hover{
+        color:white;
+    }
+    .shade a:hover{
+        background-color: white;
+    }
+ 
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+
+    }
+  
+    nav ul li a{
+        padding:1.2rem 1rem;
+        position: relative;
+        right:58px;
+        font-size:12px;
+          }
+    nav ul li a:hover{
+        color: #8e4c01;
+} 
+  
+  /* slides goes here*/
+  
+  
+.mySlides {
+  display:none;
+}
+  
+  p{
+    margin-left:80px;
+    margin-right:80px;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 1.5em;
+
+  }
+ 
+  
 .backy{
 
   background-image: url(background.png);
@@ -193,6 +196,8 @@ h2{
   color:#424240;
 }
 
+  /*  footer */
+  
 footer{
 	
 	background-color:#c67d07;
@@ -203,13 +208,23 @@ footer{
 	padding-top:5px;
 	color:white;
 
-}
-.footerbg{
+}     
+  /* footer -- contact bg*/
+
+  .footerbg{
 	
 	background:url(contactbg.png);
 	background-repeat:repeat;
 	color:white;
+  padding:2px;
 	
 }
+  .dimcolor{
+    color:#8c8c88;
+  } 
+  .footerbold{
+    font-size:20px;
+  
+  }
 
 }
