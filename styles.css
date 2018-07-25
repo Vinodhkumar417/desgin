@@ -1,3 +1,4 @@
+
 body, html{
   font-size: 100%;
   font-family: "Helvetica", sans-serif;
@@ -7,112 +8,8 @@ body, html{
 
 .mySlides {
   display:none;
-}
-  /*---------------------------- header top info ------------------------------------- */
+}             
 
-@media only screen and (min-width: 30em){
-
-  .header {
-  display: table;
-  width: 100%;
-  box-sizing: border-box;
-  background:#161616;
-  color:#8c8c88;
-  margin:auto;
-  padding:5px;
-}
-.header > * {
-  display: table-cell;
-}	
-.header > *:last-child {
-  text-align: right;  
-}
-.nav {
-  vertical-align: baseline;
-}
-.topinfo{
-  font-size:12.5px;
-  text-indent: 50px;
-  color:#8c8c88;
-
-}
-.shade, .topend{
-  text-decoration: none;
-  text-overflow: normal;
-  color:#8c8c88;
-  position: relative;
-  right:70px;
-  font-size: 14px;
-}
-
-
-.shade{
-  display:inline-block!important;
-  width:20px;
-  height:19px;
-  color:white;
-  background-color:#666666;
-  text-align: center;
-  padding: 1px;
-  vertical-align: middle;
-  border-radius:50%;
-}
-
-    .nav a:hover{
-          color:white;
-    }
-    .shade:hover{
-      background-color: white;
-      cursor:pointer;  
-  }
-
-/* -------------top code end here--------------------------------------------------------------------- */
-
-    nav ul li{
-        border-bottom:none;
-        flex: 1 0 auto;
-        position: relative;
-
-    }
-  
-    nav ul li a{
-        padding:1.2rem 1rem;
-        position: relative;
-        right:58px;
-        font-size:12px;
-          }
-    nav ul li a:hover{
-        color: #8e4c01;
-}
-
-  p{
-    margin-left:80px;
-    margin-right:80px;
-    font-size: 15px;
-    font-weight: 300px;
-    line-height: 1.5em;
-
-  }
-
-.backy{
-
-  background-image: url(background.png);
-  padding: 1px;
-  margin:0px;
-}
-
-#parahead{
-
-  font-size: 40px;
-  font-style: bold; 
-   text-align: center;
-  color:#424240;
-}
-
-h2{
-  text-align: center;
-  color:#424240;
-}
                         /* border for nav */
 nav{
   padding-top: 3px;
@@ -124,7 +21,8 @@ border-bottom:0.9px solid #9e9301;
 nav{
   position: sticky;
   top: 0;
-} 
+}
+ 
                              /* End Sticky  */
 nav ul{
     list-style: none;
@@ -142,6 +40,9 @@ nav ul li a{
 
 
 }
+nav ul li{
+    border-bottom: 1px dotted #ddd;
+}
 
                              /*styling logo*/
 
@@ -150,12 +51,9 @@ nav div:first-child{
      background-image:url(bg.jpg);
         background-repeat: repeat;
 }
-
-
                           /*Styling for larger devices*/
               
-
-
+@media only screen and (min-width: 30em){
     nav{
         display: flex;
         justify-content: space-between;
@@ -184,5 +82,134 @@ nav div:first-child{
         line-height: 1;
         font-size:19px;
     }
+    .nav a:hover{
+          color:white;
+    }
+    .shade a:hover{
+      background-color: white;
+    }
+ 
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+
+    }
+  
+    nav ul li a{
+        padding:1.2rem 1rem;
+        position: relative;
+        right:58px;
+        font-size:12px;
+          }
+    nav ul li a:hover{
+        color: #8e4c01;
 }
 
+  p{
+    margin-left:80px;
+    margin-right:80px;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 1.5em;
+
+  }
+ 
+  
+      /* top position code here */
+
+.header {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  background:#161616;
+  color:#8c8c88;
+  margin:auto;
+  padding:6px;
+}
+
+.header > * {
+  display: table-cell;
+}
+
+.header > *:last-child {
+  text-align: right;  
+}
+
+.nav {
+  vertical-align: baseline;
+}
+
+.topinfo{
+
+  font-size:12.5px;
+  text-indent: 50px;
+  color:#8c8c88;
+
+}
+
+.shade ,.topend{
+  text-decoration: none;
+  text-overflow: normal;
+  color:#8c8c88;
+  position: relative;
+  right:70px;
+  font-size: 12px;
+}
+
+.shade a:hover{
+  background: white;
+}
+
+.shade{
+  display:inline-block!important;
+  width:20px;
+  height:19px;
+  background-color:#666666;
+  color:white;
+  text-align: center;
+  padding: 1px;
+  vertical-align: middle;
+  border-radius:50%;
+}
+
+.backy{
+
+  background-image: url(background.png);
+  padding: 1px;
+  margin:0px;
+}
+
+#parahead{
+
+  font-size: 40px;
+  font-style: bold; 
+   text-align: center;
+  color:#424240;
+}
+
+h2{
+  text-align: center;
+  color:#424240;
+}
+
+footer{
+	
+	background-color:#c67d07;
+	height:22px;
+	width:auto;
+	font-size:12px;
+	text-align:center;
+	padding-top:5px;
+	color:white;
+
+}
+.footerbg{
+	
+	background:url(contactbg.png);
+	background-repeat:repeat;
+	color:white;
+	
+}
+
+}
